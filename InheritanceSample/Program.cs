@@ -29,6 +29,12 @@ namespace InheritanceSample
                 Productkey = "student@email.edu",
                 Version = "16.7.1"
             };
+
+            Console.WriteLine(p.GetDisplayText());
+            Console.WriteLine(b.GetDisplayText());
+            Console.WriteLine(s.GetDisplayText());
+
+            Console.ReadKey(); // keeps the program open
         }
     }
 }
