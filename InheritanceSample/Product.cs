@@ -11,6 +11,13 @@ namespace InheritanceSample
     /// </summary>
     public class Product
     {
+        /* Constructors */
+
+        public Product(string productName)
+        {
+            Name = productName;
+        }
+
         /* Properties */
 
         /// <summary>
