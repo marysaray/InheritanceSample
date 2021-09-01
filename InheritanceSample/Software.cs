@@ -19,5 +19,15 @@ namespace InheritanceSample
         /// Email associated to the downloadable software application.
         /// </summary>
         public string Productkey { get; set; }
+
+        public override string GetDisplayText() // override changes the behavior of the base method.
+        {
+            throw new NotImplementedException();
+        }
+
+        public override string ToString()
+        {
+            return base.ToString(); 
+        }
     }
 }
