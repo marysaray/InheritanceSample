@@ -8,6 +8,11 @@ namespace InheritanceSample
 {
     public class Book : Product
     {
+        public Book(string productName) : base(productName) // inherits the base class constructor
+        {
+            // inherits from product class
+        }
+
         /* Properties */
 
         /// <summary>
