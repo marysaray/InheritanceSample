@@ -28,7 +28,7 @@ namespace InheritanceSample
 
         public override string GetDisplayText() // override changes the behavior of the base method.
         {
-            throw new NotImplementedException();
+            return base.GetDisplayText() + $" The version is {Version}.";
         }
 
         public override string ToString()
