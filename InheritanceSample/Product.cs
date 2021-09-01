@@ -35,7 +35,7 @@ namespace InheritanceSample
         /// </summary>
         /// <returns></returns>
         // block syntax
-        public string GetDisplayText()
+        public virtual string GetDisplayText() // virtual keyword allows to be changeable by derived class.
         {
             return $"{Name} costs {Price}";
         }
