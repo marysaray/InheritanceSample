@@ -10,26 +10,23 @@ namespace InheritanceSample
     {
         static void Main(string[] args)
         {
-            Product p = new Product()
+            Product p = new Product("Gadget")
             {
                 ProductId = 1,
-                Name = "Gadget",
                 Price = 9.99
             };
 
-            Book b = new Book()
+            Book b = new Book("Murach's C#")
             {
                 ProductId = 2,
-                Name = "Murach's C#",
                 Price = 39.99,
                 Author = "Joel Murach",
                 Isbn = "1563245689754"
             };
 
-            Software s = new Software()
+            Software s = new Software("Visual Studio 2019")
             {
                 ProductId = 3,
-                Name = "Visual Studio 2019",
                 Price = 500,
                 Productkey = "student@email.edu",
                 Version = "16.7.1"
