@@ -37,6 +37,11 @@ namespace InheritanceSample
             Console.ReadKey(); // keeps the program open
         }
 
+        /// <summary>
+        /// This method will display text details for a specific product
+        /// passed in the parameter.
+        /// </summary>
+        /// <param name="product"></param>
         private static void DisplayProduct(Product product)
         {
             Console.WriteLine(product.GetDisplayText());
