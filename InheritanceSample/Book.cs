@@ -8,6 +8,8 @@ namespace InheritanceSample
 {
     public class Book : Product
     {
+        private string isbn;
+
         /* Constructors */
 
         public Book(string productName) : base(productName) // inherits the base class constructor
@@ -25,7 +27,21 @@ namespace InheritanceSample
         /// <summary>
         /// 13 digit serial code associated with the book.
         /// </summary>
-        public string Isbn { get; set; }
+        public string Isbn 
+        {
+            get
+            {
+                return isbn;
+            }
+            set
+            {
+                if (value == null)
+                {
+                    throw new ArgumentNullException($"{nameof(Isbn)} cannot be null.");
+                }
+                isbn = value;
+            }
+        }
 
         /// <summary>
         /// Name of Author for a specific book.
