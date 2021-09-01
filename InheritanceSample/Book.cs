@@ -19,9 +19,9 @@ namespace InheritanceSample
             throw new InvalidOperationException("ISBN is required to add book.");
         }
 
-        public Book(string productName, string isbn) : base(productName) // overload methods with isbn required &  inherits the base class constructor
+        public Book(string productName, string isbn) : this(productName, isbn, null) // overload methods with isbn required &  inherits the base class constructor
         {
-            Isbn = isbn;
+            // reduced redundancy
         }
 
         public Book(string productName, string isbn, string author) : base(productName)
