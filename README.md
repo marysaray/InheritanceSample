@@ -11,3 +11,15 @@
 [virtual (C# Reference)](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual)
 
 [Access Modifiers (C# Programming Guide)](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers)
+
+## The SOLID Principles are five principles of Object-Oriented class design. 
+
+**They are a set of rules and best practices to follow while designing a class structure.*
+
+**Let's look at each principle one by one. Following the SOLID acronym, they are:** [Resource](https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/)
+
+- The **(Single Responsibility)** Principle
+- The **(Open-Closed)** Principle
+- The **(Liskov Substitution)** Principle
+- The **(Interface Segregation)** Principle
+- The **(Dependency Inversion)** Principle
