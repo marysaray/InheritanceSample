@@ -44,6 +44,12 @@ namespace InheritanceSample
         /// <param name="product"></param>
         private static void DisplayProduct(Product product)
         {
+            if (product is Software)
+            {
+                Software s = product as Software;
+                Console.WriteLine("Save your product key: " + s.Productkey);
+                Console.WriteLine("Software Info:");
+            }
             Console.WriteLine(product.GetDisplayText());
         }
     }
