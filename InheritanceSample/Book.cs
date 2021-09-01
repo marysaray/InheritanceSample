@@ -8,6 +8,8 @@ namespace InheritanceSample
 {
     public class Book : Product
     {
+        /* Fields */
+
         private string isbn;
 
         /* Constructors */
@@ -20,6 +22,12 @@ namespace InheritanceSample
         public Book(string productName, string isbn) : base(productName) // overload methods with isbn required &  inherits the base class constructor
         {
             Isbn = isbn;
+        }
+
+        public Book(string productName, string isbn, string author) : base(productName)
+        {
+            Isbn = isbn;
+            Author = author;
         }
 
         /* Properties */
