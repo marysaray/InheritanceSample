@@ -30,11 +30,16 @@ namespace InheritanceSample
                 Version = "16.7.1"
             };
 
-            Console.WriteLine(p.GetDisplayText());
-            Console.WriteLine(b.GetDisplayText());
-            Console.WriteLine(s.GetDisplayText());
+            DisplayProduct(p);
+            DisplayProduct(b);
+            DisplayProduct(s);
 
             Console.ReadKey(); // keeps the program open
+        }
+
+        private static void DisplayProduct(Product product)
+        {
+            Console.WriteLine(product.GetDisplayText());
         }
     }
 }
