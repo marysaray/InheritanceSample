@@ -8,6 +8,12 @@ namespace InheritanceSample
 {
     public class Software : Product
     {
+        /* Constructors */
+        public Software(string productName) : base(productName) // inherits the base class constructor
+        {
+            // inherits from product class
+        }
+
         /* Properties */
 
         /// <summary>
