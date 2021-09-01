@@ -16,11 +16,10 @@ namespace InheritanceSample
                 Price = 9.99
             };
 
-            Book b = new Book("Murach's C#", "1563245689754")
+            Book b = new Book("Murach's C#", "1563245689754", "Joel Murach")
             {
                 ProductId = 2,
                 Price = 39.99,
-                Author = "Joel Murach",
             };
 
             Software s = new Software("Visual Studio 2019")
